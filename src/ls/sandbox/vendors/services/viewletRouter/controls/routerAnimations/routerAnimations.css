@@ -1,0 +1,26 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Agrimo Infra LTD. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+
+@keyframes fadeInElement {
+    
+    0% {
+        opactiy : 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+@keyframes fadeOutElement {
+    
+    0% {
+        opactiy : 1;
+    }
+    100% {
+        opacity: 0;
+    }
+
+}

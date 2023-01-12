@@ -1,25 +1,36 @@
 {
-  "name": "Louis",
+  "name": "tor-dev",
   "version": "0.1.0",
   "description": "Download Torrent Files",
-  "main": "index.js",
-  "author": "Agrimo Infra LTD",
+  "author": {
+    "name": "Agrimo Infra LTD"
+  },
   "license": "MIT",
+  "main": "./dev/main.js",
   "private": true,
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "platf-resources": "gulp move-platform-resources",
+    "build-platform": "webpack --config ./build/webpack/webpack.platform.js",
+    "build-sandbox": "webpack --config ./build/webpack/webpack.sandbox.js",
+    "build-preload": "webpack --config ./build/webpack/webpack.preload.js",
+    "move-runtime": "gulp move-runtime"
   },
   "devDependencies": {
     "@types/jasmine": "^4.3.1",
     "@types/webpack": "^5.28.0",
     "@types/webtorrent": "^0.109.3",
-    "@vaadin/router": "^1.7.4",
     "css-loader": "^6.7.3",
     "electron": "19.1.5",
     "electron-builder": "^23.6.0",
     "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
     "gulp-filter": "^7.0.0",
+    "gulp-header-comment": "^0.10.0",
+    "gulp-if": "^3.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp-uglify": "^3.0.2",
     "html-webpack-plugin": "^5.5.0",
     "jasmine": "^4.5.0",
     "jasmine-browser-runner": "^1.2.0",
@@ -36,8 +47,14 @@
   "dependencies": {
     "easy-auto-launch": "^6.0.2",
     "electron-updater": "^5.3.0",
-    "lit": "^2.5.0",
     "rxjs": "^7.8.0",
     "webtorrent": "^1.9.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgrimoInfra/Louis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AgrimoInfra/Louis/issues"
   }
 }

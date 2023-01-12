@@ -1,0 +1,65 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Agrimo Infra LTD. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+
+
+.ls-frame-window > .ls-titlebar-part > .xl-traffic-lights {
+    display:flex;
+    position:absolute;
+    top:0px;
+    right:0px;
+    height:30px;
+    width: fit-content;
+    -webkit-app-region: no-drag;
+
+}
+.ls-frame-window > .ls-titlebar-part > .xl-traffic-lights > div {
+    width: 46px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.ls-frame-window > .ls-titlebar-part > .xl-traffic-lights > div {
+    width: 46px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.ls-frame-window > .ls-titlebar-part > .xl-traffic-lights > div.chrome-common:hover {
+    background-color : var(--ls-tb-trafficlights-hover);
+}
+.ls-frame-window > .ls-titlebar-part > .xl-traffic-lights > div.window-close:hover {
+    background-color: #ff0000;
+}
+
+.ls-frame-window > .ls-titlebar-part > .xl-traffic-lights > div.window-close-dark:before {
+   content: url(./trafficLights/darktheme/chrome-close-dark.svg)
+}
+.ls-frame-window > .ls-titlebar-part > .xl-traffic-lights > div.window-maximize-dark:before {
+    content: url(./trafficLights/darktheme/chrome-maximize-dark.svg)
+}
+.ls-frame-window > .ls-titlebar-part > .xl-traffic-lights > div.window-minimize-dark:before {
+    content: url(./trafficLights/darktheme/chrome-minimize-dark.svg)
+}
+.ls-frame-window > .ls-titlebar-part > .xl-traffic-lights > div.window-restore-dark:before {
+    content: url(./trafficLights/darktheme/chrome-restore-dark.svg)
+}
+
+.ls-frame-window > .ls-titlebar-part > .xl-traffic-lights > div.window-close-light:before {
+    content: url(./trafficLights/lighttheme/chrome-close.svg)
+ }
+ .ls-frame-window > .ls-titlebar-part > .xl-traffic-lights > div.window-maximize-light:before {
+     content: url(./trafficLights/lighttheme/chrome-maximize.svg)
+ }
+ .ls-frame-window > .ls-titlebar-part > .xl-traffic-lights > div.window-minimize-light:before {
+     content: url(./trafficLights/lighttheme/chrome-minimize.svg)
+ }
+ .ls-frame-window > .ls-titlebar-part > .xl-traffic-lights > div.window-restore-light:before {
+     content: url(./trafficLights/lighttheme/chrome-restore.svg)
+ }

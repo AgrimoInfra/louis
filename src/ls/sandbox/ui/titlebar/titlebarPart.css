@@ -1,0 +1,38 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Agrimo Infra LTD. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+
+.ls-frame-window>.ls-titlebar-part {
+
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 30px;
+    -webkit-app-region: drag;
+    background-color: var(--ls-titlebar-focus);
+}
+
+.ls-frame-window>.ls-titlebar-part>.xl-resizer {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    -webkit-app-region: no-drag;
+    height: 1px;
+}
+
+
+.ls-frame-window>.ls-titlebar-part>.xl-title {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-left: 10px;
+    width: fit-content;
+    -webkit-app-region: no-drag;
+    font-weight: 300;
+    font-size: 13.5px;
+    color: #fff;
+    font-family: "Segoe UI";
+
+}
